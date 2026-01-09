@@ -740,7 +740,7 @@ IMPORTANT:
               Book your free 30-minute strategy call and let's turn one of these ideas into your reality.
             </p>
             
-              href="https://calendly.com/your-calendly-link"
+              href="https://calendly.com/jsimonesolutions/business-ideas-brainstorming"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -757,7 +757,6 @@ IMPORTANT:
               }}
               onMouseOver={(e) => e.target.style.backgroundColor = '#B8915A'}
               onMouseOut={(e) => e.target.style.backgroundColor = '#C8A15A'}
-            >
               Book Your Strategy Call Now
             </a>
           </div>
