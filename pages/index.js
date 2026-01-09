@@ -757,6 +757,7 @@ IMPORTANT:
               }}
               onMouseOver={(e) => e.target.style.backgroundColor = '#B8915A'}
               onMouseOut={(e) => e.target.style.backgroundColor = '#C8A15A'}
+            >
               Book Your Strategy Call Now
             </a>
           </div>
