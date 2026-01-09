@@ -740,6 +740,7 @@ IMPORTANT:
               Book your free 30-minute strategy call and let's turn one of these ideas into your reality.
             </p>
             
+            <a
               href="https://calendly.com/jsimonesolutions/business-ideas-brainstorming"
               target="_blank"
               rel="noopener noreferrer"
