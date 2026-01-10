@@ -106,8 +106,6 @@ On this call, we'll:
 ✔️ Identify your fastest path to $5K-10K
 ✔️ Show you exactly how The Wealth Lab accelerates your timeline
 
-**[BOOK YOUR STRATEGY CALL NOW]**
-
 *Corporate has taken enough. Let's build the life you actually deserve.*
 
 IMPORTANT: 
@@ -739,7 +737,7 @@ IMPORTANT:
             }}>
               Book your free 30-minute strategy call and let's turn one of these ideas into your reality.
             </p>
-            
+
             <a
               href="https://calendly.com/jsimonesolutions/business-ideas-brainstorming"
               target="_blank"
