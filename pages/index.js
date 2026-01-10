@@ -124,30 +124,25 @@ IMPORTANT:
 
       const data = await response.json();
       setBusinessIdeas(data.ideas);
-      // Send data to GHL webhook
-try {
-  await fetch('https://services.leadconnectorhq.com/hooks/DvWTrdD23UD09zv6GgZj/webhook-trigger/afc4eeb6-e80d-4c93-9f92-673c1da4c630', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      firstName: userInfo.fname,
-      lastName: userInfo.lname,
-      email: userInfo.email,
-      phone: userInfo.phone,
-      question1: answers.q1,
-      question2: answers.q2,
-      question3: answers.q3,
-      question4: answers.q4,
-      question5: answers.q5,
-      question6: answers.q6,
-      question7: answers.q7.join(', '),
-      businessIdeas: data.ideas
-    })
-  });
-} catch (error) {
-  console.error('Failed to send to GHL:', error);
-  // Don't block the user experience if webhook fails
-}
+      await fetch('/api/sendToGHL', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    firstName: userInfo.fname,
+    lastName: userInfo.lname,
+    email: userInfo.email,
+    phone: userInfo.phone,
+    question1: answers.q1,
+    question2: answers.q2,
+    question3: answers.q3,
+    question4: answers.q4,
+    question5: answers.q5,
+    question6: answers.q6,
+    question7: answers.q7,
+    businessIdeas: data.ideas
+  })
+});
+
       setStep('results');
     } catch (error) {
       console.error('Error generating ideas:', error);
