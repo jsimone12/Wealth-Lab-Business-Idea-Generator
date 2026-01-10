@@ -141,7 +141,7 @@ try {
       question5: answers.q5,
       question6: answers.q6,
       question7: answers.q7.join(', '),
-      businessIdeas: generatedText
+      businessIdeas: data.ideas
     })
   });
 } catch (error) {
