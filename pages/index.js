@@ -124,6 +124,15 @@ IMPORTANT:
 
       const data = await response.json();
       setBusinessIdeas(data.ideas);
+      const pdfRes = await fetch('/api/generatePdf', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ businessIdeas: data.ideas })
+});
+
+const pdfBlob = await pdfRes.blob();
+const pdfUrl = URL.createObjectURL(pdfBlob);
+
       await fetch('/api/sendToGHL', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
