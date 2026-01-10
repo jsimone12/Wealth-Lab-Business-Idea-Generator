@@ -5,7 +5,7 @@ export default async function handler(req, res) {
 
   try {
     const ghlRes = await fetch(
-      'https://services.leadconnectorhq.com/hooks/DvWTrdD23UD09zv6GgZj/webhook-trigger/afc4eeb6-e80d-4c93-9f92-673c1da4c630',
+      'https://services.leadconnectorhq.com/hooks/DvWTrdD23UD09zv6GgZj/webhook-trigger/17b0254a-2348-40fb-931a-c44f7c24e096',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
